@@ -29,7 +29,7 @@ mongoose.connect(process.env.MONGO_URL, console.log("Connected to mongoose"));
 const jwtSecret = process.env.JWT_SEC;
 const bcryptSalt = bcrypt.genSaltSync(10);
 
-app.get("/test", (req, res) => {
+app.get("/", (req, res) => {
   res.json("test ok");
 });
 
